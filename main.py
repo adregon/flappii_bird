@@ -9,7 +9,7 @@ play.set_backdrop((215, 196, 164))
 
 
 
-bird=play.new_image(image='sprite_23.png',x=-200,y=0,size=300)
+bird=play.new_image(image='./img/sprite_23.png',x=-200,y=0,size=300)
 bird.start_physics(can_move=True,stable=False,bounciness=0)
 
 
@@ -17,8 +17,8 @@ bird.start_physics(can_move=True,stable=False,bounciness=0)
 
 def draw_truba(y,delta):
     size = 100
-    trub=play.new_image(image="sprite_1.png",x=0,y=y,size=size)
-    trub2=play.new_image(image="sprite_22.png",x=0,y=y+700+delta,size=size)
+    trub=play.new_image(image="./img/sprite_1.png",x=0,y=y,size=size)
+    trub2=play.new_image(image="./img/sprite_22.png",x=0,y=y+700+delta,size=size)
     return trub, trub2
 
 
